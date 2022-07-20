@@ -1,0 +1,163 @@
+//EE108-Assign 1-BitsToBarLeds
+
+//20122161
+//Email:HANLIN.CAI.2021@MUMAIL.IE
+//Hanlin Cai
+
+//Besides, I write the reflection of assign_1 here
+//Writing the code.
+
+//I consider that modifying the parameters as required is the most difficult thing in this assignment because I am not good at C, I have to try it once and once again until I get the right output.
+
+//There are all of the codes I write in this assignment.
+
+//————————————————————————————————————————————————————————
+
+#include <ee108.h>
+int led[10];
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+
+  pinMode(BAR_LED_1_PIN, OUTPUT);
+  pinMode(BAR_LED_2_PIN, OUTPUT);
+  pinMode(BAR_LED_3_PIN, OUTPUT);
+  pinMode(BAR_LED_4_PIN, OUTPUT);
+  pinMode(BAR_LED_5_PIN, OUTPUT);
+  pinMode(BAR_LED_6_PIN, OUTPUT);
+  pinMode(BAR_LED_7_PIN, OUTPUT);
+  pinMode(BAR_LED_8_PIN, OUTPUT);
+  pinMode(BAR_LED_9_PIN, OUTPUT);
+  pinMode(BAR_LED_10_PIN, OUTPUT);
+}
+
+void loop() {
+
+
+
+  //Step-1
+
+    for(int i = 0; i < 10; i++){
+    led[i] = 0;
+   }
+   led[0] = 1;
+   led[1] = 1;
+   Serial.println("----------");
+   Serial.print("LedStates: "); 
+    for(int i = 9; i >= 0; i--){
+       Serial.print(led[i]);
+      }
+    Serial.println(); 
+   for(int j = 0; j < 10; j++){
+    if(led[j] == 1){
+    digitalWrite((j+3), HIGH);
+    }
+   }
+   delay(300);
+   for(int k = 0; k < 10; k++){
+    if(led[k] == 1){  
+    digitalWrite((k+3), LOW);
+    }
+   }
+   delay(1000);
+
+
+
+  //Step-2
+   for(int n = 0; n < 10; n++){
+    led[n] = 0;
+   }
+   led[0] = 1;
+   led[2] = 1;
+   led[4] = 1;
+   led[5] = 1;
+   led[6] = 1;
+   led[7] = 1;
+   led[9] = 1;
+   Serial.print("LedStates: "); 
+    for(int i = 9; i >= 0; i--){
+       Serial.print(led[i]);
+      }
+    Serial.println(); 
+   for(int j = 0; j < 10; j++){
+    if(led[j] == 1){
+    digitalWrite((j+3), HIGH);
+    }
+   }
+   delay(600);
+   for(int k = 0; k < 10; k++){
+    if(led[k] == 1){  
+    digitalWrite((k+3), LOW);
+    }
+   }
+   delay(1000);
+
+
+
+
+  //Step-3
+   for(int n = 0; n < 10; n++){
+    led[n] = 0;
+   }
+   led[8] = 1;
+   led[9] = 1;
+   Serial.print("LedStates: "); 
+    for(int i = 9; i >= 0; i--){
+       Serial.print(led[i]);
+      }
+    Serial.println();
+    for(int j = 0; j < 2; j++){
+       for(int k = 0; k < 10; k++){
+        if(led[k] == 1){
+          digitalWrite((k+3), HIGH);
+          }
+        }
+         delay(50);
+       for(int k = 0; k < 10; k++){
+        if(led[k] == 1){  
+          digitalWrite((k+3), LOW);
+          }
+        }
+         delay(250);
+      } 
+   delay(1000);
+
+
+
+
+  //Step-4
+  for(int i = 0; i < 10; i++){
+    int ran = random(0,2);
+    led[i] = ran;
+   }
+     if(led[0] == 0 && led[1] == 0 && led[2] == 0 && led[3] == 0 && led[4] == 0 && led[5] == 0 && led[6] == 0 && led[7] == 0 && led[8] == 0 && led[9] == 0){
+    int ran_led = random(0,10);
+    led[ran_led] = 1;
+   }
+   Serial.print("LedStates: "); 
+    for(int i = 9; i >= 0; i--){
+       Serial.print(led[i]);
+    }
+    Serial.println();
+    for(int j = 0; j < 5; j++){
+      for(int k = 0; k < 10; k++){
+        if(led[k] == 1){
+          digitalWrite((k+3), HIGH);
+        }
+      }
+       delay(10);
+      for(int k = 0; k < 10; k++){
+        if(led[k] == 1){  
+         digitalWrite((k+3), LOW);
+        }
+      }
+       delay(140);
+      }
+   delay(1000);
+}
+
+
+
+
+
+//That's all.

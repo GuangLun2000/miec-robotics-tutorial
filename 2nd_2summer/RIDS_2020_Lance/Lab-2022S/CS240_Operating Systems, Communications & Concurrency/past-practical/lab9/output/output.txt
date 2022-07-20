@@ -1,0 +1,85 @@
+Writer 0 comes here
+Reader 0 comes here
+Reader acquired read lock
+Reader 0 comes here
+Reader acquired read lock
+Reader 0 comes here
+Reader acquired read lock
+writer acquired write lock
+writer finished, releasing write lock
+Reader finished, releasing read lock
+Reader 1 comes here
+Reader acquired read lock
+Reader finished, releasing read lock
+Reader finished, releasing read lock
+Writer 1 comes here
+writer acquired write lock
+Reader 1 comes here
+Reader acquired read lock
+Reader 1 comes here
+Reader acquired read lock
+Reader finished, releasing read lock
+writer finished, releasing write lock
+Writer 2 comes here
+writer acquired write lock
+Reader finished, releasing read lock
+Reader 2 comes here
+Reader acquired read lock
+Reader 2 comes here
+Reader acquired read lock
+Reader finished, releasing read lock
+writer finished, releasing write lock
+Reader finished, releasing read lock
+Reader finished, releasing read lock
+Reader 3 comes here
+Reader acquired read lock
+Reader 2 comes here
+Reader acquired read lock
+Reader finished, releasing read lock
+Writer 3 comes here
+writer acquired write lock
+Reader finished, releasing read lock
+Reader 3 comes here
+Reader acquired read lock
+Reader finished, releasing read lock
+Reader 3 comes here
+Reader acquired read lock
+writer finished, releasing write lock
+Reader 4 comes here
+Reader acquired read lock
+Reader 4 comes here
+Reader acquired read lock
+Writer 4 comes here
+writer acquired write lock
+Reader finished, releasing read lock
+Reader finished, releasing read lock
+Reader finished, releasing read lock
+Reader 5 comes here
+Reader acquired read lock
+Reader 4 comes here
+Reader acquired read lock
+writer finished, releasing write lock
+Reader finished, releasing read lock
+Reader finished, releasing read lock
+Reader 5 comes here
+Reader acquired read lock
+Reader 5 comes here
+Reader acquired read lock
+Reader finished, releasing read lock
+Writer 5 comes here
+writer acquired write lock
+Reader 6 comes here
+Reader acquired read lock
+Reader finished, releasing read lock
+writer finished, releasing write lock
+Reader finished, releasing read lock
+Reader 6 comes here
+Reader acquired read lock
+Writer 6 comes here
+writer acquired write lock
+writer finished, releasing write lock
+Writer 7 comes here
+writer acquired write lock
+Reader 7 comes here
+Reader acquired read lock
+Reader finished, releasing read lock

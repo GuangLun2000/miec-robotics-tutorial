@@ -1,0 +1,3 @@
+Creating a socket connection to server on port 6013
+Reading data from Server over socket connection
+Mon Apr 18 08:28:23 CST 2022

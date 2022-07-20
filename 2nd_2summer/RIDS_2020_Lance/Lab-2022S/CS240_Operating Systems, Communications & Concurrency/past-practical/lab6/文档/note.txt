@@ -1,0 +1,7 @@
+Practical 6
+You can contact us live on Microsoft Teams CS240 Labs channel or Moodle Chat during normal lab times Wed 1-3 and Thurs 3-5. You should install the Microsoft Teams app or login to the office 365 portal to connect.
+
+In the third (and last) of our practicals on Interprocess Communication Mechanisms, we take a look at Network Communication Mechanisms for communication between unrelated processes running on different machines. First we look at low level Socket based communication in C. Then we show how Java can simplify socket programming with predefined networking classes and specific constructors with few parameters. Finally we present the higher level programming model of Remote Procedure Call/Remote Method Invocation which attempts to mask as much of the underlying network connection code as possible.
+
+SUBMIT ON MOODLE
+You must install the development environment first if you intend to use Windows instead of Unix. Then read the practical handout for the platform you intend running the code on. When finished, upload ONE TEXT FILE containing the output as displayed by the three programming sections 6a, 6b, 6c when you ran them in Eclipse (or on Unix) in order to receive your grade. If you did not complete all sections just upload the output from the parts that you got working. You will have from Wed 1pm until Thursday 6pm to complete the lab. Note the code files included in this folder are for windows, if you are using unix, you can cut and paste the code from the unix handout.

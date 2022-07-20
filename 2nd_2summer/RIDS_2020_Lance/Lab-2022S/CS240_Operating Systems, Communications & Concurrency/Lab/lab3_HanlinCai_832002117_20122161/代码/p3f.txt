@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+
+int main(){
+
+char buffer[10];
+int fd,n;
+
+printf("What's file do you want to read\n");
+
+scanf("%s", buffer );
+
+//printf("%s",buffer);
+//buffer=read(0,buffer,6);
+
+fd=open(buffer,O_RDONLY);
+
+n=read(fd,buffer,10);
+write(1,buffer,n);
+
+//close(fd);
+
+do{
+n=read(fd,buffer,10);
+write(1,buffer,n);
+}while(n==10);
+
+close(fd);
+}

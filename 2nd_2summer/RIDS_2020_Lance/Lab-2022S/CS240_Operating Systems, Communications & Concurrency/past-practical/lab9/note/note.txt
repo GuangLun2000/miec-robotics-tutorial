@@ -1,0 +1,19 @@
+Practical 9
+The Readers/Writers problem, covered in lectures, describes a synchronisation problem where some processes classed as readers and other processes classed as writers wish to share access to data items. A solution to the problem may either prioritise Reader or prioritise Writers.
+
+You are required to complete the template code given in this folder to implement both reader/writer policies discussed in class.
+
+Please read the accompanying handout describing in more detail what is to be done.
+
+
+SUBMIT ON MOODLE BY THURSDAY 23rd April 6pm
+
+One text file containing:-
+
+1)         The completed Reader thread class
+
+2)         The completed Writer thread class
+
+3)         Your final completed ReadersWritersSimulation Class
+
+4)         The completed DataAccessPolicyManager2 Class

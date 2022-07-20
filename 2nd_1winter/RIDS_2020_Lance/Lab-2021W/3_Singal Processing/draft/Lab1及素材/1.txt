@@ -1,0 +1,5 @@
+n = 0:1:20;
+x = cos(pi * n / 6);
+stem(n, x);
+x = cos(2 * n);
+stem(n, x);

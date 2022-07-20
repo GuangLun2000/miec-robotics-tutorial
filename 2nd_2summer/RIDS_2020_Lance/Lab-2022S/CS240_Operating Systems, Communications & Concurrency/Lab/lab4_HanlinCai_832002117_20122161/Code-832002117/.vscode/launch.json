@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": true,
+      "cwd": "/Users/lancecai/Desktop/Lab-2022S/CS240_Operating Systems, Communications & Concurrency/Lab/lab4_HanlinCai_832002117_20122161/Code-832002117",
+      "environment": [],
+      "program": "/Users/lancecai/Desktop/Lab-2022S/CS240_Operating Systems, Communications & Concurrency/Lab/lab4_HanlinCai_832002117_20122161/Code-832002117/build/Debug/outDebug",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "externalConsole": false
+    }
+  ]
+}

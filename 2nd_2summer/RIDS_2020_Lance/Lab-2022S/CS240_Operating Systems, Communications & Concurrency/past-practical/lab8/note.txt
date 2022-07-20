@@ -1,0 +1,16 @@
+Practical 8
+The Dining Philosophers problem is an example of a concurrency problem dealing with the allocation of limited resources among competing processes. The code of a solution to the dining philosophers problem was covered in class and the code for a simulation of the problem is contained in this folder. You will also need the Semaphore class from last week's lab.
+
+Read the assignment handout for the Java programming platform you intend to use, either Eclipse/Windows or Unix. You may also wish to revise the slide notes from Lecture 15 to help you with the solution.
+
+SUBMIT ON MOODLE
+ONE TEXT FILE containing
+
+CS240 Practical 8a
+10 lines of output from the original code you are given.
+
+CS240 Practical 8b
+A copy of the DiningPhilosphers.java file from your 1st modified solution
+
+CS240 Practical 8c
+A copy of the DiningPhilosophers.java file from your 2nd modified solution
