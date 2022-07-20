@@ -1,0 +1,142 @@
+//Hanlin Cai
+//832002117
+
+
+//Lab2_1_NestedIf
+
+/**
+ * demonstrate the use of nested if statements.
+ * The sketch just lights different LEDs for short and long presses
+ * of the button
+ */
+
+#include <ee108.h>
+
+// TODO - define constants for the superloop duration and the number of ticks
+// (i.e. superloop iterations) corresponding to a very long click
+//
+
+const int Red_LED = LED1_PIN;
+const int Green_LED = 2;
+const int Button = SW1_PIN;
+int count = 0;
+
+void setup() {
+  // TODO - initialise the LED pins that you'll be using
+  pinMode(Red_LED,OUTPUT);
+  pinMode(Green_LED,OUTPUT);
+  pinMode(Button,INPUT);
+}
+
+void loop() {
+  int sw1Event; // variable to save the current switch event
+  if(digitalRead(Button)==SW_ACTIVE){
+    digitalWrite(Red_LED, HIGH); 
+    count++;
+    if(count == 40){
+      digitalWrite(Green_LED, HIGH);
+    }
+  }else{
+    count = 0;
+    digitalWrite(Red_LED, LOW);
+    digitalWrite(Green_LED, LOW);
+  }
+ delay(50);
+
+ 
+  // check the current switch event
+  sw1Event = readSwitchEvent(sw1Object);
+
+  // TODO: check if the switch is currently pressed and light the LEDs 
+  // as per the lab instruction
+  //
+  // You can check if the SW1 is currently pressed using *one* of the following
+  // expression options in your if-statement:
+  // expression 1:  if ((sw1Event == SW_ON_START) || (sw1Event == SW_ON_CONTINUED)) ...
+  // expression 2:  if (sw1Event & SW_ON_ANY) ... 
+
+  // TODO: delay for the appropriate amount of time
+}
+
+
+
+//Lab2_2_WrapTutorial
+
+#include <ee108.h>
+
+const int SUPERLOOP_MS = 1000;
+const int LED_ON_MS = 50;
+const int NUM_LEDS = 5;
+
+void setup() {
+  // initialize 5 bar LEDs
+  pinMode(BAR_LED_1_PIN, OUTPUT);
+  pinMode(BAR_LED_2_PIN, OUTPUT);
+  pinMode(BAR_LED_3_PIN, OUTPUT);
+  pinMode(BAR_LED_4_PIN, OUTPUT);
+  pinMode(BAR_LED_5_PIN, OUTPUT);
+}
+
+void loop() {
+  
+
+  // this variable tracks which Bar LED we want to light
+  static int ledNum = 0;
+
+  // flash the LED on briefly and then switch it off again
+  digitalWrite(BAR_LED_1_PIN + ledNum, HIGH);
+  delay(LED_ON_MS);
+  digitalWrite(BAR_LED_1_PIN + ledNum, LOW);
+
+  // TODO - increment the counter and wrap if necessary
+//  ledNum++;
+//  if(ledNum>=5){
+//    ledNum=0;
+//  }
+ledNum = (ledNum + 1) % 5;
+  // pause between LED flashes
+  delay(SUPERLOOP_MS);
+}
+
+
+
+
+//Lab2_3_CascadedIf
+
+#include <ee108.h>
+
+const int RED = LED1_PIN;
+const int GREEN=LED2_PIN;
+static int count=0;
+const int delay_time=1000;
+
+void setup() {
+  // put your setup code here, to run once:
+ pinMode(RED, OUTPUT);
+ pinMode(GREEN, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+if(count==0||count==1||count==8||count==9){
+   digitalWrite(RED, LOW);
+    digitalWrite(GREEN, LOW);
+}else if(count==2||count==7){
+  digitalWrite(RED, HIGH);
+    digitalWrite(GREEN, LOW);
+}else if(count==3||count==6){
+   digitalWrite(RED, LOW);
+    digitalWrite(GREEN, HIGH);
+}else{
+    digitalWrite(RED, HIGH);
+    digitalWrite(GREEN, HIGH);
+}
+count++;
+count=count%10;
+delay(delay_time);
+}
+
+
+
+//OVER
+

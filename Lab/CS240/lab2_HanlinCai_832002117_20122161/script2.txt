@@ -1,0 +1,1 @@
+grep 'hell' /usr/share/dict/word

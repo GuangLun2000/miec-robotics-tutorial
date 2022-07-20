@@ -1,0 +1,6 @@
+[1] 11139
+Server: Handling client 127.0.0.1
+Server: Received msg-> hello
+Server: Sent Reply-> server is alive, how are you?
+Client: Sent greeting-> hello
+Client: Received Reply-> server is alive, how are you?
