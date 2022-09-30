@@ -1,8 +1,22 @@
-# Here is the MIEC repo of Lance CAI.
-MIEC的学弟学妹们，你们好，这里是Lance Cai
+# Here is the MIEC Repo of HANLIN CAI (Lance)
+My name is **Hanlin Cai**. I am a junior majoring in Automation at [Fuzhou University] (China) and Robotics and Intelligent Devices at [Maynooth University] (Ireland, Combined Degrees). I gain a CGPA of 3.79/4.00, ranking top 10% in my major. Recently, I am nominated for the 2021-2022 **China National Scholarship** (top 1%). 🎊
 
-我开源了我的MIEC仓库，希望你能够善用它,
+This repo is where I keep track of my MIEC experiences, such as course slides, lab programs and some coooool tools. 🙈You can learn better by refering to my repo, but **please do not copy my assignments, programs and reports.**
 
-**它可以帮助你少走很多弯路，也可能致使你过度依赖。**
+If you have any problems using this **MIEC Repo**, please do not hesitate to contact me (by email).
 
-请你务必善用这份材料。我们高处见。
+If you want to have a online-coffee-time (Talk) with me, you can click this [link🔗]
+
+📮 My Email: [hanlin.cai@ieee.org](hanlin.cai@ieee.org)
+
+👨🏻‍💻 [My Personal Web]
+
+🎥 [My Bilibili Channel]
+
+[link🔗]: https://mieclance.club/meet-with-lance
+[My Personal Web]: https://mieclance.club/
+[My Bilibili Channel]: https://space.bilibili.com/594030035?spm_id_from=333.1007.0.0
+[Fuzhou University]: https://www.fzu.edu.cn/
+[Maynooth University]: https://maynoothuniversity.ie/
+[Chin-Hong Wong]: https://www.researchgate.net/profile/Chin-Hong-Wong
+[Prof. Pietro Lio']: https://www.cl.cam.ac.uk/~pl219/
