@@ -1,5 +1,5 @@
 # Here is the MIEC Repo of HANLIN CAI (Lance)
-My name is **Hanlin Cai**. I am a junior majoring in Automation at [Fuzhou University] (China) and Robotics and Intelligent Devices at [Maynooth University] (Ireland, Combined Degrees). I gain a CGPA of 3.79/4.00, ranking top 10% in my major. Recently, I am nominated for the 2021-2022 **China National Scholarship** (top 1%).🎊
+My name is **Hanlin Cai**. I am a junior majoring in Automation at [Fuzhou University] (China) and Robotics and Intelligent Devices at [Maynooth University] (Ireland, Combined Degrees). I gain a CGPA of 3.79/4.00, ranking top 10% in my major. Recently, I am nominated for the 2021-2022 **China National Scholarship** (top 0.1%).🎊
 
 This repo is where I keep track of my MIEC experience, such as Course slides, Lab programs and some coooool Tools.🙈
 You can learn better by refering to my repo, but **please do not copy my assignments, programs and reports.**
