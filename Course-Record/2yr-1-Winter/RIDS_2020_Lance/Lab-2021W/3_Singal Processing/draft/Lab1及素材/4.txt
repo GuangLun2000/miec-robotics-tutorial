@@ -1,9 +1,0 @@
-f1 = 20;
-t1 = 1 / f1;
-t = linspace(0, t1, 200);
-x = 0;
-for k = 1:2:5
-x = x + (8 / (pi * pi)) * (power(-1, (k - 1) / 2) / (k * k)) * sin(k * t * 2 * pi / t1);
-end
-plot(t,x)
-clear;
